@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head lang="en">
+	<title>Disapearing Ninja</title>
+	<meta name="description" content="A webpage including multiple images. When these images are clicked, they disapear. Ofcourse, there will be an option to restore the page back to it's original value"> 
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+	<script>
+		$('document').ready(function(){
+			$('img').click(function(){
+				$(this).hide();
+			})
+
+			$('button').click(function(){
+				$('img').show();
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="container">
+		<h1>Disapearing Ninja</h1>
+		<p>Click on any of the images below and watch it disapear. click the 'restore' button to restore the images.</p>
+		
+		<div id="images">
+			<a href="#"><img src="img/img_1.jpg" alt="Image of empire state building"></a>
+			<a href="#"><img src="img/img_2.jpg" alt="Image of house"></a>
+			<a href="#"><img src="img/img_3.jpg" alt="Image of buildings in New York City"></a>
+			<a href="#"><img src="img/img_4.jpg" alt="Image of New York buidlings from a highrise condo"></a>
+			<a href="#"><img src="img/img_5.jpg" alt="Image of college student studying"></a>
+			<a href="#"><img src="img/img_6.jpg" alt="Image of laptop"></a>
+			<a href="#"><img src="img/img_7.jpg" alt="Image of business men"></a>
+			<a href="#"><img src="img/img_8.jpg" alt="Image of college books"></a>
+		</div> <!-- End of iamges -->
+		<button>Restore Images</button>
+	</div>  <!-- End of container -->
+</body>
+</html>
